@@ -23,7 +23,7 @@ Klikni na tlačidlo nižšie a skript sa nainštaluje priamo do Tampermonkey:
 ### Manuálna inštalácia
 1. Nainštaluj si [Tampermonkey](https://www.tampermonkey.net/) (ak ho ešte nemáš).  
 2. Otvor [tento link na raw skript](https://github.com/megy123/Grepolis-public/blob/main/Scripts/CSDetector/src/myscript.user.js).
-3. Tampermonkey sa opýta, či chceš skript nainštalovať → potvrď.
+3. Vytvor nový tampermonkey script, vlož tam obsah z predchadzajúceho kroku a ulož.
 
 ---
 
