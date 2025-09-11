@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CSDetector
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Detecting slowest unit in icoming attack
 // @author       Megy
 // @match        https://*.grepolis.com/game/*
