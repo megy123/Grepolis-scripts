@@ -5,8 +5,8 @@ Tento Tampermonkey userscript automaticky analyzuje prichádzajúce nepriateľsk
 - Dokáže rozpoznať **všetky typy jednotiek**, s výnimkou **mýtických**, ktoré zatiaľ nepodporuje.  
 - Skript **neberie do úvahy žiadne bonusy ani špeciálne efekty**.  
 - Je **primárne zameraný na detekciu osídľovacej lode (OL)**, pretože tá rozhoduje o tom, či hrozí strata mesta.  
-- Okrem toho je spoľahlivý aj pri detekcii **katapultov (po ostrove, nie po vode)**, kde poskytuje presné výsledky.
-- Ide o odhad, nie o presné určenie prichádzajúceho útoku
+- Okrem toho je spoľahlivý aj pri detekcii **katapultov (po ostrove, nie po vode)**.
+- Ide o odhad, nie o presné určenie prichádzajúceho útoku.
 
 Vďaka tomu máš jednoduchý prehľad, či útok obsahuje osídľovaciu loď alebo katapult, a nemusíš sa spoliehať na odhady.  
 Skript tak pomáha rýchlejšie reagovať na hrozby a šetriť čas pri kontrole útokov.
