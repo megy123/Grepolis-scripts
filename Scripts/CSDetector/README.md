@@ -43,9 +43,11 @@ Klikni na tlačidlo nižšie a skript sa nainštaluje priamo do Tampermonkey:
 ### Ukážka použitia
 
 1. Rozklikni prichadzajúce útoky cez ikonu aktívnych príkazov pre dané mesto **(nie prehľad administátora)**.
+
 ![Aktívne príkazy](figures/figure1.png)
 
 2. Otvor okno útoku a skontroluj najpomalšiu jednotku v útoku.
+
 ![Príkaz útoku](figures/figure2.png)
 
 ---
