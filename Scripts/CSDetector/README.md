@@ -17,7 +17,8 @@ Skript tak pomáha rýchlejšie reagovať na hrozby a šetriť čas pri kontrole
 
 Klikni na tlačidlo nižšie a skript sa nainštaluje priamo do Tampermonkey:
 
-[![Install with Tampermonkey](https://img.shields.io/badge/Install%20with-Tampermonkey-black?logo=tampermonkey)](https://github.com/megy123/Grepolis-public/blob/main/Scripts/CSDetector/src/myscript.user.js)
+[![Install with Tampermonkey](https://img.shields.io/badge/Install%20with-Tampermonkey-black?logo=tampermonkey)](https://github.com/megy123/Grepolis-public/raw/main/Scripts/CSDetector/src/myscript.user.js)
+
 
 ### Manuálna inštalácia
 1. Nainštaluj si [Tampermonkey](https://www.tampermonkey.net/) (ak ho ešte nemáš).  
