@@ -1,69 +1,59 @@
-# 🚀 CSDetector
+# CSDetector
 
-Tento Tampermonkey userscript automaticky analyzuje prichádzajúce nepriateľské útoky v hre a deteguje zloženie jednotiek.  
+Tampermonkey userscript for estimating the likely slowest unit in an incoming Grepolis attack.
 
-- Dokáže rozpoznať **všetky typy jednotiek**, s výnimkou **mýtických**, ktoré zatiaľ nepodporuje.  
-- Skript **neberie do úvahy žiadne bonusy ani špeciálne efekty**.  
-- Je **primárne zameraný na detekciu osídľovacej lode (OL)**, pretože tá rozhoduje o tom, či hrozí strata mesta.  
-- Okrem toho je spoľahlivý aj pri detekcii **katapultov (po ostrove, nie po vode)**.
-- Ide o odhad, nie o presné určenie prichádzajúceho útoku.
+It is mainly useful for quickly spotting whether an attack may contain a colonization ship and, in some cases, land catapults. The script provides an estimate, not a guaranteed unit composition.
 
-Vďaka tomu máš jednoduchý prehľad, či útok obsahuje osídľovaciu loď alebo katapult, a nemusíš sa spoliehať na odhady.  
-Skript tak pomáha rýchlejšie reagovať na hrozby a šetriť čas pri kontrole útokov.
+## Status
 
----
+Beta. The script is already usable, but it still has important limitations and should be treated as a practical helper rather than a perfect detector.
 
-## ⚙️ Inštalácia
+## What It Does
 
-Klikni na tlačidlo nižšie a skript sa nainštaluje priamo do Tampermonkey:
+- Analyzes incoming attack timing
+- Estimates the slowest unit in the command
+- Focuses especially on colonization ship detection
+- Can also be useful for selected catapult cases on the same island
+
+## Limitations
+
+- Mythical units are not fully supported
+- Speed bonuses and special effects are not fully accounted for
+- Results are heuristic and may be inaccurate outside its main use cases
+
+## Installation
+
+Install directly with Tampermonkey:
 
 [![Install with Tampermonkey](https://img.shields.io/badge/Install%20with-Tampermonkey-black?logo=tampermonkey)](https://github.com/megy123/Grepolis-public/raw/main/Scripts/CSDetector/src/myscript.user.js)
 
+Manual installation:
 
-### Manuálna inštalácia
-1. Nainštaluj si [Tampermonkey](https://www.tampermonkey.net/) (ak ho ešte nemáš).  
-2. Otvor [tento link na raw skript](https://github.com/megy123/Grepolis-public/blob/main/Scripts/CSDetector/src/myscript.user.js).
-3. Vytvor nový tampermonkey script, vlož tam obsah z predchadzajúceho kroku a ulož.
+1. Install [Tampermonkey](https://www.tampermonkey.net/).
+2. Open the raw script file at [Scripts/CSDetector/src/myscript.user.js](https://github.com/megy123/Grepolis-public/blob/main/Scripts/CSDetector/src/myscript.user.js).
+3. Create a new Tampermonkey script, paste the contents, and save it.
 
----
+## Usage
 
-## 🕹️ Používanie
+- Open Grepolis as usual after installing the script
+- Inspect incoming attacks from the target town view
+- Open a command window and review the estimated slowest unit shown by the script
 
-- Po nainštalovaní sa skript automaticky spustí vždy, keď máš otvorenú hru.  
-- Pri prichádzajúcich útokoch vyhodnotí zloženie flotily.  
-- Na základe času, kedy bol útok odoslaný odhadne najpomalšiu jednotku a zobrazí ju v okne prichadzajúceho útoku.  
-- Všetko funguje na pozadí, netreba nič manuálne zapínať.  
+### Example
 
-> [!WARNING]  
-> Skript ešte nie je úplne dokončený, preto ho odporúčam používať najmä na detekciu OL, čo je jeho hlavný účel, a Katapultov (po súši, nie po vode). Pri týchto jednotkách sa mi zatiaľ nestalo, že by sa odhad pomýlil, na rozdiel od iných.
+1. Open incoming attacks through the active commands icon for the town, not the administrator overview.
 
-> [!CAUTION]  
-> Script v akutuálnej verzii nezahŕňa všetky mýtické jednotky a nepočíta z bonusmi na rýchlosť ako je *Topánka* alebo výskumy *Meteorológia*, *Osadenie plachiet*, *Kartografia*.
+![Incoming commands](figures/figure1.png)
 
-### Ukážka použitia
+2. Open the attack window and inspect the predicted slowest unit.
 
-1. Rozklikni prichadzajúce útoky cez ikonu aktívnych príkazov pre dané mesto **(nie prehľad administátora)**.
+![Attack command](figures/figure2.png)
 
-![Aktívne príkazy](figures/figure1.png)
+## Requirements
 
-2. Otvor okno útoku a skontroluj najpomalšiu jednotku v útoku.
+- Browser with Tampermonkey support
+- [Tampermonkey](https://www.tampermonkey.net/)
 
-![Príkaz útoku](figures/figure2.png)
+## Feedback
 
----
-
-## 📋 Požiadavky
-
-- **Prehliadač:** Chrome, Firefox alebo iný kompatibilný.  
-- **Rozšírenie:** [Tampermonkey](https://www.tampermonkey.net/).  
-
----
-
-## 🛠️ Príspevky a chyby
-
-Ak narazíš na bug alebo máš nápad na vylepšenie, vytvor [issue](https://github.com/megy123/Grepolis-public/issues) v tomto repozitári.
-
----
-
-
-
+If you find a bug or have an improvement idea, open an issue in this repository.
